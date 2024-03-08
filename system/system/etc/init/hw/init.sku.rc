@@ -1,0 +1,47 @@
+on fs
+    setprop ro.usb.type 2
+    setprop log.tag.Icing F
+    setprop log.tag.statsd F
+    setprop qemu.hw.mainkeys 1
+    setprop ro.build.sp.num 04
+    setprop ro.wifi.channels 11
+    setprop ro.build.product ND1
+    setprop ro.product.device ND1
+    setprop log.tag.improveTouch F
+    setprop ro.product.brand Nokia
+    setprop ro.com.google.acsa true
+    setprop ro.product.locale en-GB
+    setprop ro.product.board MSM8937
+    setprop persist.dsds.enabled true
+    setprop ro.product.model.num 00WW
+    setprop ro.wifi.power.reduction 1
+    setprop ro.product.model "TA-1024"
+    setprop persist.radio.sar.enabled 7
+    setprop ro.product.name TA-1024_00WW
+    setprop ro.product.vendor.device ND1
+    setprop persist.anr.block_long_time 3
+    setprop ro.config.dbgcfgtool_config 2
+    setprop ro.product.first_api_level 25
+    setprop ro.product.nickname "Nokia 5"
+    setprop ro.product.vendor.brand Nokia
+    setprop persist.anr.block_short_time 1
+    setprop ro.com.android.mobiledata true
+    setprop persist.anr.allow_dump_number 1
+    setprop ro.com.android.dataroaming false
+    setprop ro.product.model.display TA-1024
+    setprop persist.sys.pftrace.enabled false
+    setprop log.tag.RegisteredServicesCache F 
+    setprop persist.raise.dialer.priority true
+    setprop ro.com.android.prov_mobiledata false
+    setprop ro.product.manufacturer "HMD Global"
+    setprop ro.vendor.qti.sys.fw.bg_apps_limit 32
+    setprop ro.com.google.clientidbase android-hmd-rev2
+    setprop ro.product.vendor.manufacturer "HMD Global"
+    setprop ro.vendor.qti.sys.fw.trim_enable_memory 1073741824
+    setprop ro.vendor.build.fingerprint ${ro.build.fingerprint}
+    setprop setupwizard.feature.deferred_snooze_allow_never true
+on post-fs
+    setprop dalvik.vm.dex2oat-threads 4
+on fs
+	setprop ro.build.fingerprint Nokia/TA-1024_00WW/ND1:9/PKQ1.181105.001/00WW_6_19F:user/release-keys
+	setprop ro.build.description "TA-1024_00WW-user 9 PKQ1.181105.001 00WW_6_19F release-keys"

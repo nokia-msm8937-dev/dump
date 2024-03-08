@@ -1,0 +1,2 @@
+on early-boot
+setprop ro.boot.nfc nxp

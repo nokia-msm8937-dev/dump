@@ -1,0 +1,2 @@
+//short,open,allnode max,allnode min,nobk
+:7,3200,2355,1740,4094

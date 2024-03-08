@@ -1,0 +1,15 @@
+on boot
+		chown system system /dev/fingerprint
+    chmod 0666 /dev/fingerprint
+
+on post-fs-data
+		mkdir /data/fpc 0700 system system
+    chown system system /sys/devices/soc/soc:fpc/irq
+    chown system system /sys/devices/soc/soc:fpc/wakeup_enable
+
+on property:sys.boot_completed=1
+		restorecon_recursive /data/fpc_images
+    
+service fingerprintd /system/bin/fingerprintd
+		class late_start
+		user system

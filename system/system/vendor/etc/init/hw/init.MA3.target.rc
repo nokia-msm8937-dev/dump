@@ -1,0 +1,9 @@
+# Win add for Fingerprint
+import /vendor/etc/init/hw/init.MS3.fingerprint.rc
+
+# Zachary add for touch
+import /vendor/etc/init/hw/init.qcom.tp.rc
+
+on post-fs-data
+        setprop persist.radio.multisim.config dsds
+        setprop persist.multisim.config dsds

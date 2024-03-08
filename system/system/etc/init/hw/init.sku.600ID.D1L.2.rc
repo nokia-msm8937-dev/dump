@@ -1,0 +1,13 @@
+on fs
+    setprop ro.product.model TA-1044
+    setprop ro.product.name TA-1044_00WW
+    setprop ro.product.vendor.model TA-1044
+    setprop ro.product.model.display TA-1044
+    setprop ro.product.vendor.name TA-1044_00WW
+    setprop ro.build.version.base_os Nokia/TA-1044_00WW/ND1:9/PKQ1.181105.001/00WW_6_19B:user/release-keys
+on fs
+    setprop ro.camera.shuttersound.default 0
+
+on fs
+	setprop ro.build.fingerprint Nokia/TA-1044_00WW/ND1:9/PKQ1.181105.001/00WW_6_19F:user/release-keys
+	setprop ro.build.description "TA-1044_00WW-user 9 PKQ1.181105.001 00WW_6_19F release-keys"
