@@ -1,0 +1,3 @@
+on fs
+    setprop persist.lcm.brightness.cust 40
+    setprop ro.camera.shuttersound.default 0

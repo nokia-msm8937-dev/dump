@@ -1,0 +1,59 @@
+on fs
+    setprop ro.usb.type 2
+    setprop fw.max_users 5
+    setprop log.tag.Icing F
+    setprop log.tag.statsd F
+    setprop qemu.hw.mainkeys 1
+    setprop ro.build.sp.num 04
+    setprop ro.wifi.channels 11
+    setprop ro.build.product PLE
+    setprop ro.product.device PLE
+    setprop log.tag.improveTouch F
+    setprop ro.product.brand Nokia
+    setprop ro.com.google.acsa true
+    setprop ro.product.locale en-GB
+    setprop fw.show_multiuserui true
+    setprop ro.product.board MSM8937
+    setprop ro.product.model TA-1021
+    setprop persist.dsds.enabled true
+    setprop ro.product.model.num 00WW
+    setprop ro.wifi.power.reduction 1
+    setprop persist.radio.sar.enabled 7
+    setprop ro.opa.eligible_device true
+    setprop persist.multisim.config dsds
+    setprop ro.product.name TA-1021_00WW
+    setprop ro.product.vendor.device PLE
+    setprop persist.anr.block_long_time 3
+    setprop ro.config.dbgcfgtool_config 2
+    setprop ro.product.first_api_level 25
+    setprop ro.product.nickname "Nokia 6"
+    setprop ro.product.vendor.brand Nokia
+    setprop persist.anr.block_short_time 1
+    setprop ro.com.android.mobiledata true
+    setprop persist.anr.allow_dump_number 1
+    setprop ro.product.vendor.model TA-1021
+    setprop ro.com.android.dataroaming false
+    setprop ro.product.model.display TA-1021
+    setprop log.tag.RegisteredServicesCache F
+    setprop persist.sys.pftrace.enabled false
+    setprop persist.radio.multisim.config dsds
+    setprop persist.raise.dialer.priority true
+    setprop ro.product.vendor.name TA-1021_00WW
+    setprop ro.com.android.prov_mobiledata false
+    setprop ro.product.manufacturer "HMD Global"
+    setprop ro.vendor.qti.sys.fw.bg_apps_limit 32
+    setprop persist.radio.enable_crossbinding true
+    setprop ro.com.google.clientidbase android-hmd-rev2
+    setprop ro.product.vendor.manufacturer "HMD Global"
+    setprop ro.vendor.qti.sys.fw.trim_enable_memory 1073741824
+    setprop ro.vendor.build.fingerprint ${ro.build.fingerprint}
+    setprop setupwizard.feature.deferred_snooze_allow_never true
+    setprop ro.hw.cert_info.path "/elabel/eLabel/TA-1021/worldwide_sku_fake.png"
+    setprop ro.build.version.base_os Nokia/TA-1021_00WW/PLE:9/PKQ1.181105.001/00WW_6_19B:user/release-keys
+on post-fs
+    setprop dalvik.vm.dex2oat-threads 4
+    setprop persist.sys.security_enable false
+    setprop persist.sys.strict_op_enable false
+on fs
+	setprop ro.build.fingerprint Nokia/TA-1021_00WW/PLE:9/PKQ1.181105.001/00WW_6_19F:user/release-keys
+	setprop ro.build.description "TA-1021_00WW-user 9 PKQ1.181105.001 00WW_6_19F release-keys"

@@ -1,0 +1,14 @@
+# TA-1021_00WW-user 9 PKQ1.181105.001 00WW_6_19F release-keys
+- manufacturer: fih
+- platform: 
+- codename: PLE
+- flavor: D1C_00WW_FIH-user
+- release: 9
+- id: PKQ1.181105.001
+- incremental: 00WW_6_19F
+- tags: release-keys
+- fingerprint: Nokia/TA-1021_00WW/PLE:9/PKQ1.181105.001/00WW_6_19F:user/release-keys
+- is_ab: false
+- brand: FIH
+- branch: TA-1021_00WW-user-9-PKQ1.181105.001-00WW_6_19F-release-keys
+- repo: fih_ple_dump

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hmsars>
+	<sar hwm="PLS" value="0.71" icnvalue="0.49"/>
+	<sar hwm="PLD" value="0.71" icnvalue="0.49"/>
+	<sar hwm="PAS" value="0.71" icnvalue="0.49"/>
+	<sar hwm="PAD" value="0.71" icnvalue="0.49"/>
+</hmsars>

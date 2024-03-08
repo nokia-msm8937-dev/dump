@@ -1,0 +1,47 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+ro.actionable_compatible_property.enabled=false
+ro.secure=1
+security.perf_harden=1
+ro.adb.secure=1
+ro.allow.mock.location=0
+ro.debuggable=0
+ro.opa.eligible_device=true
+ro.setupwizard.mode=OPTIONAL
+setupwizard.feature.predeferred_enabled=false
+ro.com.google.gmsversion=9_201903
+ro.com.google.acsa=true
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.usejit=true
+dalvik.vm.usejitprofiles=true
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.appimageformat=lz4
+pm.dexopt.first-boot=quicken
+pm.dexopt.boot=verify
+pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.inactive=verify
+pm.dexopt.shared=speed
+dalvik.vm.dex2oat-minidebuginfo=true
+debug.atrace.tags.enableflags=0
+ro.vndk.version=28
+ro.vndk.lite=true
+persist.sys.usb.config=mtp,mass_storage
+ro.oem_unlock_supported=1
+ro.zygote=zygote64_32
+ro.logd.size.stats=64K
+log.tag.stats_log=I
+ro.logdumpd.enabled=0
+#
+# BOOTIMAGE_BUILD_PROPERTIES
+#
+ro.bootimage.build.date=Mon Oct 5 18:23:00 CST 2020
+ro.bootimage.build.date.utc=1601893380
+ro.bootimage.build.fingerprint=Nokia/TA-1021_00WW/PLE:9/PKQ1.181105.001/00WW_6_19F:user/release-keys
+
+
