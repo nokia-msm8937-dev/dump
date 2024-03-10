@@ -1,0 +1,5 @@
+# Michael add for key led virtual file
+on boot
+    chown system system /sys/class/leds/green_phone/brightness
+    chown system system /sys/class/leds/white_home/brightness
+    chown system system /sys/class/leds/blue_mail/brightness

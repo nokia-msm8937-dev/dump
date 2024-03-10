@@ -1,0 +1,55 @@
+# Win add for Fingerprint
+import /vendor/etc/init/hw/init.D1C.fingerprint.rc
+# Win add for Touchpanel
+import /vendor/etc/init/hw/init.D1C.tp.rc
+# smartamp, danielyjhsieh, 20151012
+import /vendor/etc/init/hw/init.D1C.smartamp.rc
+# SW4-HL-Display-ImplementCECTCABC-00+_20160126
+import /vendor/etc/init/hw/init.D1C.lcm.rc
+# Win add for ALT
+import /vendor/etc/init/hw/init.D1C.alt.rc
+# fihtdc, danielyjhsieh, 20141205, add for FQC audio loopback
+import /vendor/etc/init/hw/init.D1C.fqc.rc
+#FihTdcCode@20170314 AlanChiu add for D1C
+import /vendor/etc/init/hw/init.D1C.am.rc
+#FihTdcCode@20161212 JohnsonJWHuang add for One image D1C-4955
+import /vendor/etc/init/hw/init.D1C.led.rc
+# Disable offload for dolby
+on early-boot
+        setprop audio.offload.disable 1
+        #Set 3rd party Arcsoft Parameters
+        setprop camera.ans.key 1
+        setprop camera.asdn.key 1
+        #Main Arcsoft NightShot
+        setprop camera.ans.sharpe.main 1
+        setprop camera.ans.int.main 5
+        setprop camera.ans.l_int.main 20
+        setprop camera.ans.sat.main 32
+        setprop camera.ans.th.main 800
+        #Main Arcsoft SDN
+        setprop camera.asdn.type.main 0
+        setprop camera.asdn.color.main 10
+        setprop camera.asdn.lumin.main 10
+        setprop camera.asdn.sharp.main 10
+        setprop camera.asdn.ring.main 10
+        setprop camera.asdn.th.main 700
+        #Front Arcsoft NightShot
+        setprop camera.ans.sharpe.front 1
+        setprop camera.ans.int.front 7
+        setprop camera.ans.l_int.front 15
+        setprop camera.ans.sat.front 22
+        setprop camera.ans.th.front 800
+        #Front Arcsoft SDN
+        setprop camera.asdn.type.front 0
+        setprop camera.asdn.color.front 10
+        setprop camera.asdn.lumin.front 10
+        setprop camera.asdn.sharp.front 10
+        setprop camera.asdn.ring.front 50
+        setprop camera.asdn.th.front 550
+        #Front camera flash display color
+        setprop persist.camera.ffcolor FFDDBE
+        #CPLai disable uicc se for D1C
+        setprop persist.vendor.radio.uicc_se_enabled false
+
+on fs
+    write /proc/sys/vm/swappiness 60
