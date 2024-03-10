@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Wallpaper>
+    <project name="default">
+        <sku id="default">
+            <item name="ACTION_PARTNER_CUSTOMIZATION">com.android.launcher3.action.PARTNER_CUSTOMIZATION</item>
+            <item name="default_property">0</item>
+            <mapping-wallpaper type="propertyWallpaper" value="0">luminescence</mapping-wallpaper>
+        </sku>
+    </project>
+</Wallpaper>

@@ -1,0 +1,14 @@
+# TA-1000_00CN-user 9 PKQ1.181105.001 00CN_6_12H release-keys
+- manufacturer: fih
+- platform: 
+- codename: D1C
+- flavor: D1C_00CN_MCDA-user
+- release: 9
+- id: PKQ1.181105.001
+- incremental: 00CN_6_12H
+- tags: release-keys
+- fingerprint: Nokia/TA-1000_00CN/D1C:9/PKQ1.181105.001/00CN_6_12H:user/release-keys
+- is_ab: false
+- brand: FIH
+- branch: TA-1000_00CN-user-9-PKQ1.181105.001-00CN_6_12H-release-keys
+- repo: fih_d1c_dump

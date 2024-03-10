@@ -1,0 +1,28 @@
+# Win add for Fingerprint
+import /vendor/etc/init/hw/init.ND1.fingerprint.rc
+# SW4-HL-TP-FixRunInFail-00+_20161201
+import /vendor/etc/init/hw/init.ND1.tp.rc
+# smartamp, danielyjhsieh, 20151012
+import /vendor/etc/init/hw/init.D1C.smartamp.rc
+# SW4-HL-Display-ImplementCECTCABC-00+_20160126
+import /vendor/etc/init/hw/init.D1C.lcm.rc
+# Win add for ALT
+import /vendor/etc/init/hw/init.D1C.alt.rc
+# fihtdc, danielyjhsieh, 20141205, add for FQC audio loopback
+import /vendor/etc/init/hw/init.D1C.fqc.rc
+#FihTdcCode@20161212 JohnsonJWHuang add for One image D1C-4955
+import /vendor/etc/init/hw/init.ND1.led.rc
+# set to dual mic for speaker phone mode
+on early-boot
+        setprop persist.audio.fluence.speaker true
+        #FIH front camera flash display color
+        setprop persist.camera.ffcolor FFDDBE
+#FihTdcCode@20170111 HusanCHYin add for ND1-1318
+import /vendor/etc/init/hw/init.ND1.am.rc
+#20170221 GaryTCShih add for ZI1 power command
+import /vendor/etc/init/hw/init.ND1.wifi.rc
+#20180508 CPLai add setprop ro.boot.nfc
+import /vendor/etc/init/hw/init.ND1.nfc.rc
+
+on fs
+    write /proc/sys/vm/swappiness 60

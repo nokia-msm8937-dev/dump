@@ -1,0 +1,45 @@
+on fs
+    setprop ro.usb.type 2
+    setprop log.tag.Icing F
+    setprop log.tag.statsd F
+    setprop ro.wifi.channels 13
+    setprop ro.build.product D1C
+    setprop ro.product.device D1C
+    setprop log.tag.improveTouch F
+    setprop ro.product.brand Nokia
+    setprop ro.product.board MSM8937
+    setprop ro.product.model TA-1000
+    setprop persist.dsds.enabled true
+    setprop ro.product.model.num 00CN
+    setprop ro.wifi.power.reduction 1
+    setprop persist.radio.sar.enabled 7
+    setprop ro.product.locale zh-Hans-CN
+    setprop ro.product.name TA-1000_00CN
+    setprop ro.product.vendor.device D1C
+    setprop persist.anr.block_long_time 3
+    setprop ro.config.dbgcfgtool_config 2
+    setprop ro.product.first_api_level 24
+    setprop ro.product.nickname "Nokia 6"
+    setprop ro.product.vendor.brand Nokia
+    setprop persist.anr.block_short_time 1
+    setprop ro.com.android.mobiledata true
+    setprop persist.anr.allow_dump_number 1
+    setprop ro.product.vendor.model TA-1000
+    setprop ro.com.android.dataroaming false
+    setprop ro.product.model.display TA-1000
+    setprop persist.sys.pftrace.enabled false
+    setprop log.tag.RegisteredServicesCache F 
+    setprop persist.raise.dialer.priority true
+    setprop ro.product.vendor.name TA-1000_00CN
+    setprop ro.vendor.qti.sys.fw.bg_apps_limit 32
+    setprop persist.radio.enable_crossbinding true
+    setprop ro.com.google.clientidbase android-hmd
+    setprop ro.product.manufacturer "HMD Global Oy"
+    setprop ro.product.vendor.manufacturer "HMD Global Oy"
+    setprop ro.vendor.build.fingerprint ${ro.build.fingerprint}
+    setprop setupwizard.feature.deferred_snooze_allow_never true
+on post-fs
+    setprop dalvik.vm.dex2oat-threads 4
+on fs
+	setprop ro.build.fingerprint Nokia/TA-1000_00CN/D1C:9/PKQ1.181105.001/00CN_6_12H:user/release-keys
+	setprop ro.build.description "TA-1000_00CN-user 9 PKQ1.181105.001 00CN_6_12H release-keys"

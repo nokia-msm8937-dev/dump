@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!--
+  Example:
+    - to allow in whitelist (will not show in PermissionControl)
+      <pkg name="com.evenwell.voicenote" />
+    - to block some preload apps (will be treat as normal installed app)
+      <pkg-block name="com.tencent.mm" />
+-->
+<whitelist-pkgs>
+    <pkg-ignore name="com.eg.android.AlipayGphone" /><!-- Block Alipay -->
+    <pkg name="android.nativemedia.aaudio" /><!-- White List -->
+</whitelist-pkgs>
